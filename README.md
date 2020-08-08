@@ -1,12 +1,10 @@
 ## Reskeleton
 
-<div style="display: flex; flex-direction: column; align-items: center;">
+<img align="center" width="250px" src="./reskeleton-image.gif"/>
 
-<img width="250px" src="./reskeleton-image.gif"/>
+<span align="center">An easy and beautiful ReactReason skeleton component</span>
 
-An easy and beautiful ReactReason skeleton component
 
-</div>
 
 # Install
 
