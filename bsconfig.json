@@ -1,0 +1,35 @@
+{
+  "name": "reskeleton",
+  "reason": {
+    "react-jsx": 3
+  },
+  "sources": [
+    {
+      "dir": "src"
+    },
+    {
+      "dir": "__stories__",
+      "type": "dev"
+    }
+  ],
+  "bsc-flags": ["-bs-super-errors", "-bs-no-version-header"],
+  "package-specs": [
+    {
+      "module": "es6"
+    },
+    {
+      "module": "commonjs",
+      "in-source": true
+    }
+  ],
+  "bs-dependencies": [
+    "reason-react",
+    "re-classnames",
+    "bs-css",
+    "bs-css-emotion"
+  ],
+  "bs-dev-dependencies": [
+    "bs-storybook"
+  ],
+  "refmt": 3
+}

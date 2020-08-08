@@ -30,3 +30,12 @@ Add `"reskeleton"` to `bsconfig`:
     "reskeleton"
 ],
 ```
+
+## Usage
+
+```re
+```
+
+## Road map
+
+- [] Tests
