@@ -1,6 +1,6 @@
 {
   "name": "reskeleton",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "React Reason skeleton component",
   "repository": "git@github.com:pedrobslisboa/reskeleton.git",
   "author": "<pedrobslisboa@gmail.com>",
