@@ -39,6 +39,10 @@ Add `"reskeleton"` to `bsconfig`:
 <Reskeleton variant=`circle />
 ```
 
+```reason
+<Reskeleton variant=`circle radius="20px" width="100px" height="100px"/>
+```
+
 - Text
 
 ```reason
@@ -54,11 +58,11 @@ Add `"reskeleton"` to `bsconfig`:
 ```
 
 ```reason
-    <Reskeleton variant=`circle width=Css.(px) />
+    <Reskeleton variant=`circle width="100px" height="100px" />
 ```
 
 
 
 ## Road map
 
-- [] Tests
+- [ ] Tests
