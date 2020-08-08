@@ -20,9 +20,10 @@
     "build-storybook": "yarn build && build-storybook -c .storybook -o .doc"
   },
   "keywords": [
-    "BuckleScript",
     "ReasonReact",
-    "reason-react"
+    "skeleton",
+    "reason-react",
+    "BuckleScript"
   ],
   "dependencies": {
     "bs-css": "^12.2.0",
