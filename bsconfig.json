@@ -1,5 +1,6 @@
 {
   "name": "reskeleton",
+  "namespace": true,
   "reason": {
     "react-jsx": 3
   },
