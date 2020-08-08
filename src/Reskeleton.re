@@ -7,7 +7,7 @@ let make =
       ~children=?,
       ~variant=`block,
       ~count=1,
-      ~radius=Css.(px(4)),
+      ~borderRadius="4px",
       ~width="100%",
       ~height="100%",
     ) => {
@@ -28,14 +28,10 @@ let make =
     <div
       className={Cn.fromList([
         Styles.root,
-        switch (variant) {
-        | `circle => Styles.circle
-        | `block => Styles.block(~radius)
-        | `text => ""
-        },
+        Styles.circle->Cn.on(variant === `circle),
         className,
       ])}
-      style={ReactDOM.Style.make(~width, ~height, ())}>
+      style={ReactDOM.Style.make(~width, ~height, ~borderRadius, ())}>
       <div> {children |> Utils.optionalChildren} </div>
     </div>
   };
