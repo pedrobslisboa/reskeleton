@@ -5,6 +5,10 @@
   "repository": "git@github.com:pedrobslisboa/reskeleton.git",
   "author": "<pedrobslisboa@gmail.com>",
   "license": "MIT",
+  "files": [
+    "src/*.re*",
+    "bsconfig.json"
+  ],
   "scripts": {
     "build": "bsb -make-world",
     "start": "bsb -make-world -w -ws _ ",
@@ -22,6 +26,7 @@
   ],
   "dependencies": {
     "bs-css-emotion": "^1.0.1",
+    "bs-reuse": "^0.6.0",
     "bs-storybook": "^0.3.0",
     "re-classnames": "^5.0.0",
     "react": "^16.8.1",
