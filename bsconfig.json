@@ -1,7 +1,6 @@
 {
   "name": "reskeleton",
-  "namespace": true,
-  "reason": {
+   "namespace": false,  "reason": {
     "react-jsx": 3
   },
   "sources": [
