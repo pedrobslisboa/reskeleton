@@ -33,14 +33,14 @@ Add `"reskeleton"` to `bsconfig`:
 
 ## Usage
 
-- Circle
+- Block
 
 ```reason
-<Reskeleton variant=`circle />
+<Reskeleton />
 ```
 
 ```reason
-<Reskeleton variant=`circle radius="20px" width="100px" height="100px"/>
+<Reskeleton radius="20px" width="100px" height="100px"/>
 ```
 
 - Text
