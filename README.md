@@ -33,8 +33,31 @@ Add `"reskeleton"` to `bsconfig`:
 
 ## Usage
 
-```re
+- Circle
+
+```reason
+<Reskeleton variant=`circle />
 ```
+
+- Text
+
+```reason
+<h1>
+    <Reskeleton variant=`text />
+</h1>
+```
+
+- Circle
+
+```reason
+    <Reskeleton variant=`circle />
+```
+
+```reason
+    <Reskeleton variant=`circle width=Css.(px) />
+```
+
+
 
 ## Road map
 
