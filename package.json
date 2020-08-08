@@ -35,6 +35,6 @@
   "devDependencies": {
     "@storybook/html": "^5.3.14",
     "@storybook/react": "^5.3.14",
-    "bs-platform": "^7.1.1",
+    "bs-platform": "^7.1.1"
   }
 }
