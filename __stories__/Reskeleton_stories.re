@@ -7,11 +7,6 @@ storiesOf("Elements | Button", _module)
     add("Default", () =>
       <div className=Stories_Styles.wrapperDefault> <Reskeleton /> </div>
     ),
-    add("Circle", () =>
-      <div className=Stories_Styles.wrapperDefault>
-        <Reskeleton variant=`circle />
-      </div>
-    ),
     add("Text", () =>
       <div className=Stories_Styles.wrapperTextVariant>
         <div className=Stories_Styles.wrapperTextSkeleton>
@@ -35,9 +30,9 @@ storiesOf("Elements | Button", _module)
           <div className=Stories_Styles.wrapperUsage>
             <Reskeleton
               className=Stories_Styles.avatar
-              variant=`circle
               width="50px"
               height="50px"
+              borderRadius="50%"
             />
             <div>
               <Reskeleton variant=`text width="100px" />

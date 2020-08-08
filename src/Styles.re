@@ -8,8 +8,6 @@ let skeletonLoading =
 
 let text = style([height(em(1.2)), transform(scale(1., 0.70))]);
 
-let circle = style([borderRadius(pct(50.))]);
-
 let root =
   style([
     background(

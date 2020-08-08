@@ -1,4 +1,3 @@
-type variant = [ | `text | `block | `circle];
 
 [@react.component]
 let make =
@@ -11,6 +10,7 @@ let make =
       ~width="100%",
       ~height="100%",
     ) => {
+
   switch (variant) {
   | `text =>
     ReasonReact.array(
@@ -23,15 +23,18 @@ let make =
         </span>,
       ),
     )
-  | `block
-  | `circle =>
+  | `block =>
     <div
       className={Cn.fromList([
         Styles.root,
-        Styles.circle->Cn.on(variant === `circle),
         className,
       ])}
-      style={ReactDOM.Style.make(~width, ~height, ~borderRadius, ())}>
+      style={ReactDOM.Style.make(
+        ~width,
+        ~height,
+        ~borderRadius,
+        (),
+      )}>
       <div> {children |> Utils.optionalChildren} </div>
     </div>
   };
