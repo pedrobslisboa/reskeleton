@@ -66,3 +66,8 @@ Add `"reskeleton"` to `bsconfig`:
 ## Road map
 
 - [ ] Tests
+- [ ] Prettier
+- [ ] Linter
+
+
+# Feel free to give your contribution
