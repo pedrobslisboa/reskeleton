@@ -24,6 +24,19 @@
       "<rootDir>/__tests__/**/*.js"
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn build && lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.re": [
+      "prettier src/**/*.re --write --print-width 120"
+    ],
+    "*.js": [
+      "jest --bail --findRelatedTests"
+    ]
+  },
   "keywords": [
     "ReasonReact",
     "skeleton",
@@ -33,6 +46,7 @@
   "dependencies": {
     "bs-css": "^12.2.0",
     "bs-css-emotion": "^1.0.1",
+    "lint-staged": "^10.2.11",
     "re-classnames": "^5.0.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
@@ -47,6 +61,7 @@
     "bs-platform": "^7.1.1",
     "bs-react-testing-library": "^0.7.3",
     "bs-storybook": "^1.0.0",
+    "husky": "^4.2.5",
     "prettier": "^2.0.5",
     "prettier-plugin-reasonml": "^0.1.0"
   }
