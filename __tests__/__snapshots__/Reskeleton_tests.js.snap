@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getByText should render 1`] = `
+<div>
+  <div
+    class=" css-ykgghw"
+    style="height: 100%; width: 100%; border-radius: 4px;"
+  >
+    <div />
+  </div>
+</div>
+`;
+
+exports[`getByText should render as text 1`] = `
+<div>
+  <span
+    class=" css-ykgghw css-11gtyes"
+    style="width: 100%;"
+  >
+    <span />
+  </span>
+</div>
+`;
+
+exports[`getByText should render as text 2`] = `
+<div>
+  <span
+    class=" css-ykgghw css-11gtyes"
+    style="width: 100%;"
+  >
+    <span />
+  </span>
+  <span
+    class=" css-ykgghw css-11gtyes"
+    style="width: 100%;"
+  >
+    <span />
+  </span>
+  <span
+    class=" css-ykgghw css-11gtyes"
+    style="width: 100%;"
+  >
+    <span />
+  </span>
+  <span
+    class=" css-ykgghw css-11gtyes"
+    style="width: 100%;"
+  >
+    <span />
+  </span>
+</div>
+`;
+
+exports[`getByText should render with className 1`] = `
+<div>
+  <div
+    class=" css-ykgghw test-class-name"
+    style="height: 100%; width: 100%; border-radius: 4px;"
+  >
+    <div />
+  </div>
+</div>
+`;

@@ -1,6 +1,7 @@
 {
   "name": "reskeleton",
-   "namespace": false,  "reason": {
+  "namespace": false,
+  "reason": {
     "react-jsx": 3
   },
   "sources": [
@@ -10,8 +11,16 @@
     {
       "dir": "__stories__",
       "type": "dev"
+    },
+    {
+      "dir": "__tests__",
+      "type": "dev"
     }
   ],
+  "jest": {
+    "testMatch": ["<rootDir>/__tests__/**/*.js"],
+    "transformIgnorePatterns": ["node_modules/@glennsl"]
+  },
   "bsc-flags": ["-bs-super-errors", "-bs-no-version-header"],
   "package-specs": [
     {
@@ -29,7 +38,9 @@
     "bs-css-emotion"
   ],
   "bs-dev-dependencies": [
-    "bs-storybook"
+    "bs-storybook",
+    "@glennsl/bs-jest",
+    "bs-react-testing-library"
   ],
   "refmt": 3
 }

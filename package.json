@@ -11,13 +11,18 @@
   ],
   "scripts": {
     "build": "bsb -make-world",
-    "start": "bsb -make-world -w -ws _ ",
+    "start": "bsb -make-world -w -ws 5001",
     "clean": "bsb -clean-world",
     "prettier": "prettier src/**/*.re --write --print-width 120",
     "test": "yarn jest",
     "test-watch": "jest --watch",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "yarn build && build-storybook -c .storybook -o .doc"
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/__tests__/**/*.js"
+    ]
   },
   "keywords": [
     "ReasonReact",
@@ -28,7 +33,6 @@
   "dependencies": {
     "bs-css": "^12.2.0",
     "bs-css-emotion": "^1.0.1",
-    "bs-storybook": "^0.3.0",
     "re-classnames": "^5.0.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
@@ -36,9 +40,12 @@
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",
+    "@glennsl/bs-jest": "^0.5.1",
     "@storybook/html": "^5.3.14",
     "@storybook/react": "^5.3.14",
     "babel-loader": "^8.1.0",
-    "bs-platform": "^7.1.1"
+    "bs-platform": "^7.1.1",
+    "bs-react-testing-library": "^0.7.3",
+    "bs-storybook": "^1.0.0"
   }
 }
