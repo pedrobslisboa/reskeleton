@@ -10,7 +10,7 @@ let make = (~className="", ~children=?, ~variant=`block, ~count=1, ~borderRadius
           Array.mapi(
             (index, _) =>
               <span
-                key={j|teste_$index|j}
+                key={j|reskeleton_$index|j}
                 className={Cn.fromList([Styles.root, Styles.text, className])}
                 style={ReactDOM.Style.make(~width, ())}>
                 <span> {children |> Utils.optionalChildren} </span>
