@@ -2,7 +2,7 @@
 
 <img align="center" width="250px" src="./reskeleton-image.gif"/>
 
-<span align="center">An easy and beautiful ReactReason skeleton component</span>
+<span align="center">A comfortable and beautiful ReactReason skeleton component</span>
 
 
 
