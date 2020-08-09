@@ -1,4 +1,3 @@
-
 let optionalChildren = children =>
   switch (children) {
   | Some(children) => children

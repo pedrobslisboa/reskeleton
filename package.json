@@ -46,6 +46,8 @@
     "babel-loader": "^8.1.0",
     "bs-platform": "^7.1.1",
     "bs-react-testing-library": "^0.7.3",
-    "bs-storybook": "^1.0.0"
+    "bs-storybook": "^1.0.0",
+    "prettier": "^2.0.5",
+    "prettier-plugin-reasonml": "^0.1.0"
   }
 }

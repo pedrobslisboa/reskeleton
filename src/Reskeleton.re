@@ -1,19 +1,8 @@
 [@react.component]
-let make =
-    (
-      ~className="",
-      ~children=?,
-      ~variant=`block,
-      ~count=1,
-      ~borderRadius="4px",
-      ~width="100%",
-      ~height="100%",
-    ) => {
+let make = (~className="", ~children=?, ~variant=`block, ~count=1, ~borderRadius="4px", ~width="100%", ~height="100%") =>
   switch (variant) {
   | `text =>
-    let rec counter = n => {
-      n < 1 ? n : counter(n - 1);
-    };
+    let rec counter = n => n < 1 ? n : counter(n - 1);
 
     ReasonReact.array(
       Array.make(
@@ -33,4 +22,3 @@ let make =
       <div> {children |> Utils.optionalChildren} </div>
     </div>
   };
-};

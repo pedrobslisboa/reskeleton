@@ -13,11 +13,7 @@ let root =
     background(
       linearGradient(
         deg(90.),
-        [
-          (pct(25.), hex("f2f2f2")),
-          (pct(37.), hex("e6e6e6")),
-          (pct(63.), hex("f2f2f2")),
-        ],
+        [(pct(25.), hex("f2f2f2")), (pct(37.), hex("e6e6e6")), (pct(63.), hex("f2f2f2"))],
       ),
     ),
     display(flexBox),
