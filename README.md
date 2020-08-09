@@ -63,7 +63,7 @@ Add `"reskeleton"` to `bsconfig`:
 
 ## Road map
 
-- [ ] Tests
+- [ ] Improve Tests - I'm only testing it with snapshots :eyes: 
 - [ ] Prettier
 - [ ] Linter
 
