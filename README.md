@@ -64,8 +64,5 @@ Add `"reskeleton"` to `bsconfig`:
 ## Road map
 
 - [ ] Improve Tests - I'm only testing it with snapshots :eyes: 
-- [ ] Prettier
-- [ ] Linter
-
 
 # Feel free to give your contribution
