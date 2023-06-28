@@ -45,18 +45,18 @@ Add `"reskeleton"` to `bsconfig`:
 
 ```reason
 <h1>
-    <Reskeleton variant=`text />
+    <Reskeleton variant=#text />
 </h1>
 ```
 
 - Circle
 
 ```reason
-<Reskeleton variant=`circle />
+<Reskeleton variant=#circle />
 ```
 
 ```reason
-<Reskeleton variant=`circle width="100px" height="100px" />
+<Reskeleton variant=#circle width="100px" height="100px" />
 ```
 
 ## Road map
