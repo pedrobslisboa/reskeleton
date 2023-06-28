@@ -2,7 +2,7 @@
 
 <img align="center" width="250px" src="./reskeleton-image.gif"/>
 
-<span align="center">A comfortable and beautiful ReactReason skeleton component</span>
+<span align="center">A comfortable and beautiful Rescript skeleton component</span>
 
 
 
@@ -59,10 +59,8 @@ Add `"reskeleton"` to `bsconfig`:
 <Reskeleton variant=`circle width="100px" height="100px" />
 ```
 
-
-
 ## Road map
 
-- [ ] Improve Tests - I'm only testing it with snapshots :eyes: 
+- [ ] Tests 
 
 # Feel free to give your contribution
