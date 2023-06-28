@@ -1,6 +1,6 @@
 {
   "name": "reskeleton",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "React Reason skeleton component",
   "repository": "git@github.com:pedrobslisboa/reskeleton.git",
   "author": "<pedrobslisboa@gmail.com>",
@@ -51,7 +51,7 @@
     "reshowcase": "^5.2.0"
   },
   "peerDependencies": {
-    "react": "^16.8.1",
-    "@rescript/react": "^0.10.0"
+    "@rescript/react": "^0.10.0",
+    "react": "^16.8.1"
   }
 }
