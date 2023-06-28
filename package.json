@@ -10,31 +10,25 @@
     "bsconfig.json"
   ],
   "scripts": {
-    "build": "bsb -make-world",
-    "start": "bsb -make-world -w -ws 5001",
-    "clean": "bsb -clean-world",
+    "res:build": "rescript build #",
+    "res:dev": "rescript build -w #",
+    "res:format": "rescript format -all #",
+    "docs": "reshowcase start --entry=docs/Reskeleton_doc.js --template=docs/index.html",
+    "docs:build": "reshowcase build --entry=docs/Reskeleton_doc.js --output=.doc --template=docs/index.html",
     "prettier": "prettier src/**/*.re --write --print-width 120",
     "test": "yarn jest",
     "test-watch": "jest --watch",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "yarn build && build-storybook -c .storybook -o .doc"
+    "prepare": "husky install"
   },
   "jest": {
     "testMatch": [
       "<rootDir>/__tests__/**/*.js"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn build && lint-staged"
-    }
-  },
   "lint-staged": {
-    "*.re": [
-      "prettier src/**/*.re --write --print-width 120"
-    ],
-    "*.js": [
-      "jest --bail --findRelatedTests"
+    "*.res": [
+      "yarn res:build",
+      "yarn res:format"
     ]
   },
   "keywords": [
@@ -44,25 +38,17 @@
     "BuckleScript"
   ],
   "dependencies": {
+    "@rescript/react": "^0.11.0",
     "bs-css": "^12.2.0",
     "bs-css-emotion": "^1.0.1",
-    "lint-staged": "^10.2.11",
-    "re-classnames": "^5.0.0",
-    "react": "^16.8.1",
     "react-dom": "^16.8.1",
-    "reason-react": ">=0.7.0"
+    "reason-react": ">=0.7.0",
+    "rescript": "^10.1.4",
+    "rescript-classnames": "^6.0.0",
+    "reshowcase": "^5.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.1",
-    "@glennsl/bs-jest": "^0.5.1",
-    "@storybook/html": "^5.3.14",
-    "@storybook/react": "^5.3.14",
-    "babel-loader": "^8.1.0",
-    "bs-platform": "^7.1.1",
-    "bs-react-testing-library": "^0.7.3",
-    "bs-storybook": "^1.0.0",
-    "husky": "^4.2.5",
-    "prettier": "^2.0.5",
-    "prettier-plugin-reasonml": "^0.1.0"
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3"
   }
 }

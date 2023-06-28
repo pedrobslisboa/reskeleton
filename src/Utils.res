@@ -1,5 +1,5 @@
 let optionalChildren = children =>
-  switch (children) {
+  switch children {
   | Some(children) => children
   | None => React.string("")
-  };
+  }
