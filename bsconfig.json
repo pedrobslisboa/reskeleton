@@ -23,7 +23,8 @@
     "@rescript/react",
     "rescript-classnames",
     "bs-css",
-    "bs-css-emotion"
+    "bs-css-emotion",
+    "reshowcase"
   ],
   "bs-dev-dependencies": ["reshowcase"]
 }
