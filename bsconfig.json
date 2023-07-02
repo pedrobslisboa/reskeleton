@@ -8,6 +8,10 @@
     {
       "dir": "docs",
       "type": "dev"
+    },
+    {
+      "dir": ".dogumentation",
+      "type": "dev"
     }
   ],
   "package-specs": [
@@ -19,12 +23,12 @@
       "in-source": true
     }
   ],
+  "suffix": ".bs.js",
   "bs-dependencies": [
     "@rescript/react",
     "rescript-classnames",
     "bs-css",
-    "bs-css-emotion",
-    "reshowcase"
+    "bs-css-emotion"
   ],
-  "bs-dev-dependencies": ["reshowcase"]
+  "bs-dev-dependencies": ["dogumentation"]
 }

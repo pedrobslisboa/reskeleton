@@ -1,6 +1,6 @@
 ## Reskeleton
 
-<img align="center" width="250px" src="./reskeleton-image.gif"/>
+<img align="center" alt="reskeleton" width="250px" src="https://github.com/pedrobslisboa/reskeleton/blob/main/logo.gif"/>
 
 <span align="center">A comfortable and beautiful Rescript skeleton component</span>
 
